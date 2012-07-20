@@ -127,7 +127,7 @@ class CustomHTTPOk(HTTPOkBase, PortListenCheck):
 
     def __init__(self, *args, **kwargs):
         self.pingport = args[-1:]
-        MemmonBase.__init__(self, *args[0:-1], **kwargs)
+        HTTPOkBase.__init__(self, *args[0:-1], **kwargs)
 
     def runforever(self, test=False):
         parsed = urlparse.urlsplit(self.url)
