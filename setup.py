@@ -70,7 +70,7 @@ setup(name='zojax.superlance',
                                   ]),
       entry_points = {
         'console_scripts': [
-            #'httpokport = zojax.superlance.httpokport:main',
+            'httpokport = zojax.superlance.httpokport:main',
             'memmonport = zojax.superlance.memmonport:main',
         ],
       },
